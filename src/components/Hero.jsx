@@ -28,7 +28,7 @@ const Hero = () => {
         {/* --- PROFILE PICTURE --- */}
         <div className="mx-auto md:mx-0 w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-white shadow-xl overflow-hidden shrink-0 relative z-10">
             <img 
-              src="/profile.png" 
+              src="/profile.jpg" 
               alt="Jullianna Villaluna" 
               className="w-full h-full object-cover"
             />
