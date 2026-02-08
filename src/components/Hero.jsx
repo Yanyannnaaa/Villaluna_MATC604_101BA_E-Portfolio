@@ -4,10 +4,10 @@ import TypewriterEffect from './TypewriterEffect';
 
 const Hero = () => {
   const roles = [
+    "Student Leader",
     "Business Analyst", 
-    "QA Engineer", 
-    "Data Specialist", 
-    "Cloud Engineer"
+    "Data Specialist",
+    "Cloud Enthusiast"
   ];
 
   return (
