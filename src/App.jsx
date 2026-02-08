@@ -1,7 +1,7 @@
 import React from 'react';
-import Hero from './components/hero';
-import Journey from './components/Journey';
-import Skills from './components/Skills';
+import Hero from './components/Hero';       // Fixed Capitalization
+import Journey from './components/Journey'; // Fixed Capitalization
+import Skills from './components/Skills';   // Fixed Capitalization
 
 const App = () => {
   return (
@@ -18,7 +18,7 @@ const App = () => {
           backgroundPosition: 'center',
           
           // UPDATED FILTER: Lower brightness (darker) + Lower contrast (softer)
-          filter: 'brightness(40%) contrast(110%)' 
+          filter: 'sepia(30%) brightness(25%) contrast(70%)' 
         }}
       />
 
@@ -31,7 +31,7 @@ const App = () => {
       <main className="relative z-10 max-w-2xl mx-auto my-12 md:my-20">
         
         {/* UPDATED OPACITY: Changed /95 to /70 to make it transparent */}
-        <div className="bg-soft-pearl/50 backdrop-blur-md shadow-2xl rounded-sm p-8 md:p-12 border-y-8 border-crimson-depth">
+        <div className="bg-soft-pearl/70 backdrop-blur-md shadow-2xl rounded-sm p-8 md:p-12 border-y-8 border-crimson-depth">
           
           <Hero />
 
