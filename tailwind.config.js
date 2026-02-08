@@ -7,9 +7,9 @@ export default {
   theme: {
     extend: {
       colors: {
-  'crimson-depth': '#773d49ff',  // Stays Red
+  'crimson-depth': '#641d2bff',  // Stays Red
   'warm-sand': '#B38F6F',      // Stays Gold
-  'soft-pearl': '#1d1d1dff',     // Was Light, now DARK (The background)
+  'soft-pearl': '#111010ff',     // Was Light, now DARK (The background)
   'obsidian-black': '#F2F1ED', // Was Dark, now LIGHT (The text)
 },
       fontFamily: {
