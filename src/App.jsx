@@ -2,7 +2,7 @@ import React from 'react';
 import Hero from './components/Hero';       
 import Journey from './components/Journey'; 
 import Skills from './components/Skills';   
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/react"
 
 const App = () => {
   return (
@@ -53,6 +53,7 @@ const App = () => {
         </footer>
 
       </main>
+      <Analytics />
     </div>
   );
 };
