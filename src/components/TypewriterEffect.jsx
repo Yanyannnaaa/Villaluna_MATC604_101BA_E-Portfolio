@@ -18,15 +18,12 @@ const TypewriterEffect = ({ words }) => {
   useEffect(() => {
     if (index === words.length) return;
 
-    // If word is finished typing
     if ( subIndex === words[index].length + 1 && !reverse ) {
       
-      // Wait a bit before deleting (PAUSE TIME)
       setTimeout(() => setReverse(true), 800); 
       return;
     }
 
-    // If word is finished deleting
     if (subIndex === 0 && reverse) {
       setReverse(false);
       setIndex((prev) => (prev + 1) % words.length);

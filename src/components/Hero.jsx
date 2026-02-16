@@ -7,8 +7,8 @@ const Hero = () => {
     "Student Leader",
     "Business Analyst", 
     "Data Specialist",
-    "Cloud Enthusiast"
-  ];
+    "Cloud Enthusiast",
+    ];
 
   return (
     <header className="space-y-6 animate-fade-in text-center md:text-left">

@@ -2,6 +2,7 @@ import React from 'react';
 import Hero from './components/Hero';       
 import Journey from './components/Journey'; 
 import Skills from './components/Skills';   
+import { Analytics } from "@vercel/analytics/next"
 
 const App = () => {
   return (

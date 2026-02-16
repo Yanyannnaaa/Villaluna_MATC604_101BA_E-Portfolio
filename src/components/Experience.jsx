@@ -6,7 +6,8 @@ const Experience = () => {
       <h2 className="font-serif text-3xl text-crimson-depth text-center mb-8">Professional Journey</h2>
 
       <div className="relative border-l-2 border-warm-sand/30 ml-3 md:ml-6 space-y-10 pl-8 md:pl-10 pb-4">
-        {/* Job 1 */}
+
+
         <div className="relative group">
           <div className="absolute -left-[41px] md:-left-[49px] top-1.5 w-5 h-5 rounded-full border-4 border-white bg-crimson-depth shadow-sm"></div>
           <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline mb-2">
@@ -20,7 +21,6 @@ const Experience = () => {
           </ul>
         </div>
 
-        {/* Job 2 */}
         <div className="relative group">
           <div className="absolute -left-[41px] md:-left-[49px] top-1.5 w-5 h-5 rounded-full border-4 border-white bg-warm-sand shadow-sm"></div>
           <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline mb-2">
