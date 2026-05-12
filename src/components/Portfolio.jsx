@@ -14,7 +14,8 @@ const Portfolio = () => {
       description: "Explored the fundamentals of propositional logic, translating natural language into symbolic logic and analyzing truth values.",
       tags: ["Logic", "Propositions"],
       icon: <PenTool size={16} />,
-      theme: "blue"
+      theme: "blue",
+      image: "/assets/portfolio/Prelim_act1.jpg"
     },
     {
       term: "Prelims",
@@ -24,7 +25,8 @@ const Portfolio = () => {
       description: "Applied set operations such as union, intersection, and complement, and verified various set identities.",
       tags: ["Sets", "Operations", "Identities"],
       icon: <PenTool size={16} />,
-      theme: "blue"
+      theme: "blue",
+      image: "/assets/portfolio/Prelim_act2.jpg"
     },
     {
       term: "Prelims",
@@ -34,7 +36,8 @@ const Portfolio = () => {
       description: "First assessment covering the properties and practical applications of set theory.",
       tags: ["Sets", "Quiz"],
       icon: <ClipboardList size={16} />,
-      theme: "emerald"
+      theme: "emerald",
+      image: "/assets/portfolio/PrelimQuiz1.jpg"
     },
     {
       term: "Prelims",
@@ -44,7 +47,8 @@ const Portfolio = () => {
       description: "Deep dive into mathematical statements and proving logical equivalences using laws of logic.",
       tags: ["Equivalence", "Logic"],
       icon: <ClipboardList size={16} />,
-      theme: "emerald"
+      theme: "emerald",
+      image: "/assets/portfolio/PrelimQuiz2.jpg"
     },
     {
       term: "Prelims",
@@ -54,7 +58,8 @@ const Portfolio = () => {
       description: "Culminating project for the preliminary term integrating logic and set theory concepts.",
       tags: ["Project", "Integration"],
       icon: <BookOpen size={16} />,
-      theme: "yellow"
+      theme: "yellow",
+      image: "/assets/portfolio/PrelimProject.jpg"
     },
     {
       term: "Prelims",
@@ -64,7 +69,8 @@ const Portfolio = () => {
       description: "Comprehensive examination of all topics covered during the Preliminary term.",
       tags: ["Exam", "Assessment"],
       icon: <FileText size={16} />,
-      theme: "purple"
+      theme: "purple",
+      image: "/assets/portfolio/PrelimExam.jpg"
     },
     // MIDTERMS
     {
@@ -75,7 +81,8 @@ const Portfolio = () => {
       description: "Calculated probabilities and visualized outcomes using tree diagrams for complex events.",
       tags: ["Probability", "Tree Diagrams"],
       icon: <PenTool size={16} />,
-      theme: "blue"
+      theme: "blue",
+      image: "/assets/portfolio/MidtermAct2.jpg"
     },
     {
       term: "Midterms",
@@ -95,7 +102,8 @@ const Portfolio = () => {
       description: "Written assessment on midterm topics, focusing on probability theory foundations.",
       tags: ["Probability", "Quiz"],
       icon: <ClipboardList size={16} />,
-      theme: "emerald"
+      theme: "emerald",
+      image: "/assets/portfolio/Midterm Quiz 1.png"
     },
     {
       term: "Midterms",
@@ -105,7 +113,8 @@ const Portfolio = () => {
       description: "Follow-up quiz covering advanced counting principles and probability applications.",
       tags: ["Counting", "Quiz"],
       icon: <ClipboardList size={16} />,
-      theme: "emerald"
+      theme: "emerald",
+      image: "/assets/portfolio/MidtermQuiz2.jpg"
     },
     {
       term: "Midterms",
@@ -115,7 +124,8 @@ const Portfolio = () => {
       description: "Comprehensive midterm exam evaluating proficiency in counting principles and probability.",
       tags: ["Exam", "Midterms"],
       icon: <FileText size={16} />,
-      theme: "purple"
+      theme: "purple",
+      image: "/assets/portfolio/Midterm Quiz 1.png"
     },
     // FINALS
     {
@@ -126,7 +136,8 @@ const Portfolio = () => {
       description: "Applied the Principle of Inclusion-Exclusion (PIE) to solve advanced counting problems.",
       tags: ["PIE", "Counting"],
       icon: <PenTool size={16} />,
-      theme: "blue"
+      theme: "blue",
+      image: "/assets/portfolio/FinalsSW1.jpg"
     },
     {
       term: "Finals",
@@ -136,7 +147,8 @@ const Portfolio = () => {
       description: "Explored the Binomial Theorem and its applications in expanding expressions and finding specific terms.",
       tags: ["Binomial Theorem", "Algebra"],
       icon: <PenTool size={16} />,
-      theme: "blue"
+      theme: "blue",
+      image: "/assets/portfolio/Final_act1.jpg"
     },
     {
       term: "Finals",
@@ -146,7 +158,8 @@ const Portfolio = () => {
       description: "Final culminating project for the course, applying advanced discrete mathematics to real-world scenarios.",
       tags: ["Project", "Finals"],
       icon: <BookOpen size={16} />,
-      theme: "yellow"
+      theme: "yellow",
+      image: "/assets/portfolio/Finals exam.jpg"
     }
   ];
 
@@ -216,10 +229,20 @@ const Portfolio = () => {
                       {item.institution}
                     </p>
                     
-                    <div className={`transition-all duration-500 ease-in-out overflow-hidden ${isActive ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
+                    <div className={`transition-all duration-500 ease-in-out overflow-hidden ${isActive ? 'max-h-[800px] opacity-100' : 'max-h-0 opacity-0'}`}>
                       <p className="text-gray-800 text-sm leading-relaxed mb-4 border-l-2 border-crimson-depth/20 pl-3 font-medium">
                         {item.description}
                       </p>
+
+                      {item.image && (
+                        <div className="mb-4 rounded-xl overflow-hidden border border-white/40 shadow-inner bg-black/5">
+                          <img 
+                            src={item.image} 
+                            alt={item.title}
+                            className="w-full h-auto object-contain max-h-[400px]"
+                          />
+                        </div>
+                      )}
 
                       <div className="flex flex-wrap gap-2">
                         {item.tags.map(tag => (

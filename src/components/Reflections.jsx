@@ -6,21 +6,21 @@ const Reflections = () => {
     {
       title: "Learning Journey: Logic & Foundations",
       icon: <BrainCircuit className="text-blue-500" size={24} />,
-      content: "During the Prelims, I learned how to distill complex natural language into precise symbolic logic. Propositional Logic and Set Operations showed me that even the most abstract concepts have a rigorous structure. This foundation is essential for writing clean, bug-free code.",
+      content: "During the Prelims, I learned how to understand and use natural language into useable logic. Propositional Logic and Set Operations showed me that abstract concepts have a structure. I was told by a Upperclassmen that foundational concepts are essential for writing clean and bug-free code. ",
       question: "What did I learn?",
       category: "PRELIMS"
     },
     {
       title: "Overcoming Challenges in Probability",
       icon: <HelpCircle className="text-yellow-500" size={24} />,
-      content: "The Midterm focus on Probability and Tree Diagrams presented my biggest challenge: visualizing multi-stage events. By breaking these down into tree diagrams, I improved my problem-solving skills and learned to handle complex systems systematically.",
+      content: "The Midterm focus on Probability and Tree Diagrams presented my biggest challenge how to visualize a multiple stage events. By breaking these concepts down into tree diagrams, I improved my problem solving skills and learned to handle and think of systems specifically Data Structure concepts that my upperclassmen also said.",
       question: "What challenges did I encounter?",
       category: "MIDTERMS"
     },
     {
       title: "Future Application: Counting & Theorems",
       icon: <TrendingUp className="text-crimson-depth" size={24} />,
-      content: "Mastering the Binomial Theorem and PIE in the Finals has shown me the power of combinatorial thinking. I can apply these skills to optimize database queries, design efficient network topologies, and improve the logic of future software projects.",
+      content: "Mastering the Binomial Theorem and PIE in the Finals has shown me the power of combinatorial and estimate thinking. I will most likely apply these skills in database queries, design efficient network connections, and improve the logic of my future software projects.",
       question: "How can I apply these skills?",
       category: "FINALS"
     }
