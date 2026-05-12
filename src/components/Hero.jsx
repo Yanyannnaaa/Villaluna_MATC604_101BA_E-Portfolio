@@ -1,5 +1,4 @@
 import React from 'react';
-import { Mail, MapPin, Linkedin } from 'lucide-react';
 import TypewriterEffect from './TypewriterEffect';
 
 const Hero = () => {
@@ -11,7 +10,7 @@ const Hero = () => {
     ];
 
   return (
-    <header className="space-y-6 animate-fade-in text-center md:text-left">
+    <header id="cover" className="space-y-6 animate-fade-in text-center md:text-left">
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
         <div>
           <h1 className="font-serif text-5xl md:text-6xl font-bold text-crimson-depth mb-2">
@@ -36,30 +35,23 @@ const Hero = () => {
 
       </div>
 
-      <div className="flex flex-wrap justify-center md:justify-start gap-4 text-sm text-gray-600 pt-4">
-        <div className="flex items-center gap-1.5">
-          <MapPin size={16} className="text-crimson-depth" />
-          <span>Mandaluyong City</span>
+      <div className="pt-4 grid grid-cols-1 md:grid-cols-2 gap-4 border-t border-warm-sand/20 mt-4">
+        <div className="space-y-1">
+          <p className="text-[10px] text-warm-sand uppercase tracking-widest font-bold opacity-60">Subject</p>
+          <p className="text-crimson-depth font-bold text-xs uppercase">Discrete Structures (MATC604)</p>
         </div>
-        <div className="flex items-center gap-1.5">
-          <Mail size={16} className="text-crimson-depth" />
-          <a href="mailto:jullianna.villaluna12@gmail.com" className="hover:text-crimson-depth transition-colors">jullianna.villaluna12@gmail.com</a>
+        <div className="space-y-1">
+          <p className="text-[10px] text-warm-sand uppercase tracking-widest font-bold opacity-60">Course & Year</p>
+          <p className="text-crimson-depth font-bold text-xs uppercase">BSIT Major in Business Analytics - 1st Year</p>
         </div>
-      </div>
-
-      <p className="text-gray-700 leading-relaxed text-lg pt-2 text-justify md:text-left">
-        Blending analytical rigor <span className="font-bold text-crimson-depth font-serif italic">with creative insight</span>. I thrive on turning messy datasets into clear, actionable strategies.
-        Driven by a <span className="font-bold text-crimson-depth font-serif italic">passion</span> for digital innovation and the <span className="font-bold text-crimson-depth font-serif italic">art of data storytelling</span>.
-      </p>
-
-      <div className="flex justify-center md:justify-start gap-4 pt-4">
-        {/* UPDATED CONTACT BUTTON: Now using outline style to match LinkedIn */}
-        <a href="mailto:jullianna.villaluna12@gmail.com" className="inline-flex items-center gap-2 border border-crimson-depth text-crimson-depth px-8 py-3 rounded-full text-sm font-bold uppercase tracking-widest hover:bg-crimson-depth hover:text-white transition-all shadow-lg hover:shadow-xl hover:-translate-y-1">
-          Contact
-        </a>
-        <a href="https://www.linkedin.com/in/jullianna-villaluna-b1aab6379/" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 border border-crimson-depth text-crimson-depth px-8 py-3 rounded-full text-sm font-bold uppercase tracking-widest hover:bg-crimson-depth hover:text-white transition-all">
-          <Linkedin size={16} /> LinkedIn
-        </a>
+        <div className="space-y-1">
+          <p className="text-[10px] text-warm-sand uppercase tracking-widest font-bold opacity-60">Instructor</p>
+          <p className="text-crimson-depth font-bold text-xs uppercase">Prof. Virginia Loyola</p>
+        </div>
+        <div className="space-y-1">
+          <p className="text-[10px] text-warm-sand uppercase tracking-widest font-bold opacity-60">Term & Semester</p>
+          <p className="text-crimson-depth font-bold text-xs uppercase">SY 2025-2026 | 2nd Semester</p>
+        </div>
       </div>
     </header>
   );

@@ -1,10 +1,23 @@
 import React from 'react';
 import Hero from './components/Hero';       
-import Journey from './components/Journey'; 
-import Skills from './components/Skills';   
+import TableOfContents from './components/TableOfContents';
+import StudentProfile from './components/StudentProfile';
+import CourseOverview from './components/CourseOverview';
+import Portfolio from './components/Portfolio'; 
+import Certificates from './components/Certificates';
+import Reflections from './components/Reflections';   
+import Resume from './components/Resume';
 import { Analytics } from "@vercel/analytics/react"
 
 const App = () => {
+  const Divider = () => (
+    <div className="flex items-center gap-4 my-12 opacity-50">
+      <div className="h-px bg-warm-sand flex-1"></div>
+      <div className="text-warm-sand text-xl">❦</div>
+      <div className="h-px bg-warm-sand flex-1"></div>
+    </div>
+  );
+
   return (
     <div className="relative min-h-screen font-sans selection:bg-warm-sand selection:text-white overflow-x-hidden">
       
@@ -27,21 +40,32 @@ const App = () => {
       {/* =========================================
           MAIN CONTENT CARD
          ========================================= */}
-      <main className="relative z-10 max-w-2xl mx-auto my-12 md:my-20">
+      <main className="relative z-10 max-w-2xl mx-auto my-12 md:my-20 px-4 md:px-0">
         
         <div className="bg-soft-pearl/60 backdrop-blur-md shadow-2xl rounded-sm p-8 md:p-12 border-y-8 border-crimson-depth">
           
           <Hero />
+          <Divider />
+          
+          <TableOfContents />
+          <Divider />
 
-          {/* Divider */}
-          <div className="flex items-center gap-4 my-12 opacity-50">
-            <div className="h-px bg-warm-sand flex-1"></div>
-            <div className="text-warm-sand text-xl">❦</div>
-            <div className="h-px bg-warm-sand flex-1"></div>
-          </div>
+          <StudentProfile />
+          <Divider />
 
-          <Journey />
-          <Skills />
+          <CourseOverview />
+          <Divider />
+
+          <Portfolio />
+          <Divider />
+
+          <Certificates />
+          <Divider />
+
+          <Reflections />
+          <Divider />
+
+          <Resume />
 
         </div>
 
