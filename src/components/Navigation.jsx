@@ -4,34 +4,41 @@ import { Home, User, BookOpen, Layers, Award, MessageSquare, FileText } from 'lu
 
 const Navigation = () => {
   const navItems = [
-    { path: '/', label: 'Home', icon: <Home size={18} /> },
-    { path: '/profile', label: 'Profile', icon: <User size={18} /> },
-    { path: '/overview', label: 'Overview', icon: <BookOpen size={18} /> },
-    { path: '/portfolio', label: 'Portfolio', icon: <Layers size={18} /> },
-    { path: '/certificates', label: 'Certificates', icon: <Award size={18} /> },
-    { path: '/reflections', label: 'Reflections', icon: <MessageSquare size={18} /> },
-    { path: '/resume', label: 'Resume', icon: <FileText size={18} /> },
+    { path: '/', label: 'Home', icon: <Home size={20} /> },
+    { path: '/profile', label: 'Profile', icon: <User size={20} /> },
+    { path: '/overview', label: 'Overview', icon: <BookOpen size={20} /> },
+    { path: '/portfolio', label: 'Portfolio', icon: <Layers size={20} /> },
+    { path: '/certificates', label: 'Certificates', icon: <Award size={20} /> },
+    { path: '/reflections', label: 'Reflections', icon: <MessageSquare size={20} /> },
+    { path: '/resume', label: 'Resume', icon: <FileText size={20} /> },
   ];
 
   return (
-    <nav className="sticky top-0 z-50 mb-8 px-2 md:px-0">
-      <div className="bg-white/60 backdrop-blur-md border-b border-white/40 shadow-sm py-3 px-4 rounded-b-2xl flex items-center justify-between overflow-x-auto no-scrollbar">
-        <ul className="flex items-center gap-6 md:gap-8 mx-auto whitespace-nowrap">
+    <nav className="sticky top-6 z-50 mb-12 flex justify-center w-full px-4 pointer-events-none">
+      <div className="bg-white/70 backdrop-blur-xl border border-white/60 shadow-xl py-3 px-6 rounded-full flex items-center justify-center overflow-visible pointer-events-auto">
+        <ul className="flex items-center gap-4 sm:gap-6">
           {navItems.map((item) => (
-            <li key={item.path}>
+            <li key={item.path} className="relative group">
               <NavLink 
                 to={item.path}
                 className={({ isActive }) => 
-                  `flex items-center gap-2 text-xs font-bold uppercase tracking-widest transition-all duration-300 ${
+                  `flex items-center justify-center w-10 h-10 rounded-full transition-all duration-300 ${
                     isActive 
-                      ? 'text-crimson-depth scale-105 border-b-2 border-crimson-depth pb-1' 
-                      : 'text-gray-500 hover:text-crimson-depth opacity-70 hover:opacity-100'
+                      ? 'bg-crimson-depth text-white shadow-[0_0_15px_rgba(153,27,27,0.4)] scale-110' 
+                      : 'bg-transparent text-gray-600 hover:bg-white/80 hover:text-crimson-depth hover:scale-110 hover:shadow-md'
                   }`
                 }
               >
                 {item.icon}
-                <span className="hidden sm:inline">{item.label}</span>
               </NavLink>
+              
+              {/* Tooltip */}
+              <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 pointer-events-none z-50">
+                <div className="bg-gray-900 text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1.5 rounded shadow-lg whitespace-nowrap">
+                  {item.label}
+                  <div className="absolute -top-1 left-1/2 -translate-x-1/2 border-4 border-transparent border-b-gray-900"></div>
+                </div>
+              </div>
             </li>
           ))}
         </ul>

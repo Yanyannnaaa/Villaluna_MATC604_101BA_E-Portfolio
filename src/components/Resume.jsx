@@ -26,7 +26,7 @@ const Resume = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="space-y-4">
-            <h4 className="text-xs text-warm-sand font-bold uppercase tracking-tighter border-l-2 border-crimson-depth pl-2">Education</h4>
+            <h4 className="font-serif text-1xl font-bold text-gray-900">Education</h4>
             <div className="space-y-2">
               <p className="text-sm font-bold text-gray-900">José Rizal University</p>
               <p className="text-xs text-gray-600 italic">BS in Information Technology (2025-Present)</p>
@@ -34,7 +34,7 @@ const Resume = () => {
           </div>
 
           <div className="space-y-4">
-            <h4 className="text-xs text-warm-sand font-bold uppercase tracking-tighter border-l-2 border-crimson-depth pl-2">Summary</h4>
+            <h4 className="font-serif text-1xl font-bold text-gray-900">Summary</h4>
             <p className="text-xs text-gray-700 leading-relaxed font-medium">
               Aspiring Business Analyst with a strong foundation in logic and data structures. Passionate about leveraging technology to drive business intelligence and operational efficiency.
             </p>

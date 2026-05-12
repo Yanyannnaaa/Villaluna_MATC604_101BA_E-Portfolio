@@ -8,9 +8,18 @@ import Certificates from './components/Certificates';
 import Reflections from './components/Reflections';   
 import Resume from './components/Resume';
 import Navigation from './components/Navigation';
+import TableOfContents from './components/TableOfContents';
 import { Analytics } from "@vercel/analytics/react"
 
 const App = () => {
+  const Divider = () => (
+    <div className="flex items-center gap-4 my-12 opacity-50">
+      <div className="h-px bg-warm-sand flex-1"></div>
+      <div className="text-warm-sand text-xl">❦</div>
+      <div className="h-px bg-warm-sand flex-1"></div>
+    </div>
+  );
+
   return (
     <div className="relative min-h-screen font-sans selection:bg-warm-sand selection:text-white overflow-x-hidden">
       
@@ -39,7 +48,13 @@ const App = () => {
         <div className="bg-soft-pearl/60 backdrop-blur-md shadow-2xl rounded-sm p-8 md:p-12 border-y-8 border-crimson-depth min-h-[60vh]">
           
           <Routes>
-            <Route path="/" element={<Hero />} />
+            <Route path="/" element={
+              <>
+                <Hero />
+                <Divider />
+                <TableOfContents />
+              </>
+            } />
             <Route path="/profile" element={<StudentProfile />} />
             <Route path="/overview" element={<CourseOverview />} />
             <Route path="/portfolio" element={<Portfolio />} />

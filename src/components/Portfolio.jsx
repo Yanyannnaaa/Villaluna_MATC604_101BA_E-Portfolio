@@ -92,7 +92,8 @@ const Portfolio = () => {
       description: "Focused practice on constructing and interpreting tree diagrams for counting and probability.",
       tags: ["Tree Diagrams", "Counting"],
       icon: <PenTool size={16} />,
-      theme: "blue"
+      theme: "blue",
+      image: "/assets/portfolio/midtermtree.jpg"
     },
     {
       term: "Midterms",
