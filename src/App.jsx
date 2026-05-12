@@ -41,11 +41,11 @@ const App = () => {
       {/* =========================================
           MAIN CONTENT CARD
          ========================================= */}
-      <main className="relative z-10 max-w-2xl mx-auto my-8 md:my-12 px-4 md:px-0">
+      <main className="relative z-10 max-w-2xl mx-auto my-4 md:my-12 px-2 md:px-0">
         
         <Navigation />
 
-        <div className="bg-soft-pearl/60 backdrop-blur-md shadow-2xl rounded-sm p-8 md:p-12 border-y-8 border-crimson-depth min-h-[60vh]">
+        <div className="bg-soft-pearl/60 backdrop-blur-md shadow-2xl rounded-sm p-5 md:p-12 border-y-8 border-crimson-depth min-h-[60vh]">
           
           <Routes>
             <Route path="/" element={

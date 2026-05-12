@@ -116,7 +116,7 @@ const Certificates = () => {
                       <img 
                         src={img} 
                         alt={`${cert.title} ${imgIdx + 1}`}
-                        className="h-48 w-auto rounded-lg shadow-md border border-white/40 hover:scale-[1.02] transition-transform duration-300 object-cover"
+                        className="h-32 md:h-48 w-auto rounded-lg shadow-md border border-white/40 hover:scale-[1.02] transition-transform duration-300 object-cover"
                         onError={(e) => e.target.style.display = 'none'}
                       />
                     </div>

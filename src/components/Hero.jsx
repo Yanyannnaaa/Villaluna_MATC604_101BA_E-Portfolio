@@ -13,12 +13,12 @@ const Hero = () => {
     <header id="cover" className="space-y-6 animate-fade-in text-center md:text-left">
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
         <div>
-          <h1 className="font-serif text-5xl md:text-6xl font-bold text-crimson-depth mb-2">
+          <h1 className="font-serif text-4xl md:text-6xl font-bold text-crimson-depth mb-2">
             Jullianna <br className="hidden md:block" /> Villaluna
           </h1>
           
           {/* THE TYPEWRITER EFFECT */}
-          <div className="text-warm-sand font-medium text-lg tracking-[0.2em] uppercase mt-2 h-7 md:h-6">
+          <div className="text-warm-sand font-medium text-base md:text-lg tracking-[0.2em] uppercase mt-2 h-7 md:h-6">
             <TypewriterEffect words={roles} />
           </div>
           

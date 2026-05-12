@@ -14,22 +14,24 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className="sticky top-6 z-50 mb-12 flex justify-center w-full px-4 pointer-events-none">
-      <div className="bg-white/70 backdrop-blur-xl border border-white/60 shadow-xl py-3 px-6 rounded-full flex items-center justify-center overflow-visible pointer-events-auto">
-        <ul className="flex items-center gap-4 sm:gap-6">
+    <nav className="sticky top-4 md:top-6 z-50 mb-8 md:mb-12 flex justify-center w-full px-2 md:px-4 pointer-events-none">
+      <div className="bg-white/70 backdrop-blur-xl border border-white/60 shadow-xl py-2 md:py-3 px-3 md:px-6 rounded-full flex items-center justify-center overflow-visible pointer-events-auto">
+        <ul className="flex items-center gap-2 sm:gap-6">
           {navItems.map((item) => (
             <li key={item.path} className="relative group">
               <NavLink 
                 to={item.path}
                 className={({ isActive }) => 
-                  `flex items-center justify-center w-10 h-10 rounded-full transition-all duration-300 ${
+                  `flex items-center justify-center w-8 h-8 md:w-10 md:h-10 rounded-full transition-all duration-300 ${
                     isActive 
                       ? 'bg-crimson-depth text-white shadow-[0_0_15px_rgba(153,27,27,0.4)] scale-110' 
                       : 'bg-transparent text-gray-600 hover:bg-white/80 hover:text-crimson-depth hover:scale-110 hover:shadow-md'
                   }`
                 }
               >
-                {item.icon}
+                <div className="scale-75 md:scale-100 flex items-center justify-center">
+                  {item.icon}
+                </div>
               </NavLink>
               
               {/* Tooltip */}

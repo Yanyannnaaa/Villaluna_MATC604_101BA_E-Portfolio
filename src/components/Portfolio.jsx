@@ -126,7 +126,7 @@ const Portfolio = () => {
       tags: ["Exam", "Midterms"],
       icon: <FileText size={16} />,
       theme: "purple",
-      image: "/assets/portfolio/Midterm Quiz 1.png"
+      image: "/assets/portfolio/Midterm Exam.png"
     },
     // FINALS
     {
@@ -180,6 +180,10 @@ const Portfolio = () => {
       <div className="text-center space-y-2 mb-12">
         <h2 className="font-serif text-3xl text-crimson-depth tracking-wide drop-shadow-md">Discrete Structures Portfolio</h2>
         <p className="text-xs text-warm-sand uppercase tracking-widest font-bold opacity-80">Assignments, Quizzes, and Exams per Term</p>
+        <p className="text-xs text-warm-sand uppercase tracking-widest font-bold opacity-80 underline">
+  Hover to view details
+</p>
+
       </div>
 
       <div className="relative">
