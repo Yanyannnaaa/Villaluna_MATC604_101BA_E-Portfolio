@@ -160,6 +160,17 @@ const Portfolio = () => {
       tags: ["Project", "Finals"],
       icon: <BookOpen size={16} />,
       theme: "yellow",
+      image: "/assets/portfolio/finalproj.jpg"
+    },    
+    {
+      term: "Finals",
+      type: "Project",
+      title: "MATH C604 FINAL EXAMINATION",
+      institution: "MATC604 - Discrete Structures",
+      description: "Comprehensive final exam evaluating proficiency in Tree Diagrams, Binomial Theorem, and Counting Principles.",
+      tags: ["Exam", "Finals"],
+      icon: <BookOpen size={16} />,
+      theme: "yellow",
       image: "/assets/portfolio/Finals exam.jpg"
     }
   ];
