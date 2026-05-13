@@ -161,7 +161,29 @@ const Portfolio = () => {
       icon: <BookOpen size={16} />,
       theme: "yellow",
       image: "/assets/portfolio/finalproj.jpg"
-    },    
+    }, 
+    {
+      term: "Finals",
+      type: "Project",
+      title: "MATH C604 FINAL QUIZ 1",
+      institution: "MATC604 - Discrete Structures",
+      description: "Comprehensive final quiz 1 evaluating proficiency in Binomial Theorem, and Counting Principles.",
+      tags: ["Quiz 1", "Finals"],
+      icon: <BookOpen size={16} />,
+      theme: "yellow",
+      image: "/assets/portfolio/Finals Quiz 1.jpg"
+    },   
+    {
+      term: "Finals",
+      type: "Project",
+      title: "MATH C604 FINAL QUIZ 2",
+      institution: "MATC604 - Discrete Structures",
+      description: "Comprehensive final quiz 2 evaluating proficiency in Tree Diagrams.",
+      tags: ["Quiz 2", "Finals"],
+      icon: <BookOpen size={16} />,
+      theme: "yellow",
+      image: "/assets/portfolio/Finals Quiz 2.jpg"
+    },   
     {
       term: "Finals",
       type: "Project",
